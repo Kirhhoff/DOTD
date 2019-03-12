@@ -1,0 +1,33 @@
+#include"ConsoleView.h"
+#include<Windows.h>
+extern const short ImageMidium = 27;//头像的中分线
+extern const short EyeHeight = BATTLE_AREA + 4;//眼睛的y坐标
+extern const short EyeDistance = 5;//单眼和中分线的间距
+extern const short MouthHeight = SCREEN_HEIGHT-2;//嘴巴y坐标
+extern const short NoseHeight = (EyeHeight + MouthHeight) / 2 - 1;//鼻子y坐标
+extern const short MouthWidth = 5;//嘴巴半宽度
+extern const short EyebrowHeight = EyeHeight - 2;//眉毛y坐标
+extern const COORD HERO_INITIAL_LOC = { 100,20 };//英雄初始降生位置
+extern const COORD CITADEL_POS = { BATTLE_WIDTH/2,BATTLE_HEIGHT/2 };//寝室位置
+extern const DWORD DIVIDER_COLOR = BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED | BACKGROUND_INTENSITY;//分割线颜色
+extern const DWORD TearColor = BACKGROUND_BLUE | BACKGROUND_INTENSITY;//眼泪的颜色
+extern const DWORD MoneyColor = FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_INTENSITY;//钱的颜色
+extern const DWORD DefaultColor = FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_INTENSITY;//默认颜色
+extern const DWORD BloodColor = FOREGROUND_RED | FOREGROUND_INTENSITY;//血量 生命偷取颜色
+extern const DWORD EnergyColor = FOREGROUND_BLUE | FOREGROUND_INTENSITY;//法力 法力汲取颜色
+extern const DWORD PaColor = FOREGROUND_GREEN | FOREGROUND_INTENSITY;//攻击力颜色
+extern const DWORD MaColor = FOREGROUND_BLUE | FOREGROUND_RED | FOREGROUND_INTENSITY;//法强颜色
+extern const DWORD PdColor = MoneyColor;//护甲颜色
+extern const DWORD MdColor = FOREGROUND_BLUE | FOREGROUND_RED;//魔抗颜色
+extern const DWORD SpeedColor = FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED;//速度颜色
+extern const DWORD CrColor = FOREGROUND_RED;//暴击率颜色
+extern const DWORD CitadelColor = BACKGROUND_RED | BACKGROUND_INTENSITY| DefaultColor;//主城颜色
+extern const DWORD Illidan_Stormrage = BACKGROUND_BLUE | DefaultColor;//大一萌新
+extern const DWORD Cairne_Bloodhoof = BACKGROUND_RED|BACKGROUND_GREEN | DefaultColor;//大二学姐
+extern const DWORD Tyrande_Whisperwind = BACKGROUND_GREEN | BACKGROUND_BLUE | BACKGROUND_INTENSITY | DefaultColor;//大三腊肉
+extern const DWORD Grom_Hellscream = BACKGROUND_BLUE | BACKGROUND_RED | DefaultColor;//大四骨灰
+extern const DWORD Uther = BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED| BACKGROUND_INTENSITY | DefaultColor;
+extern const DWORD SKILL_COLOR = FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_INTENSITY;//技能文字颜色
+extern const DWORD EQUIPMENT_COLOR = FOREGROUND_GREEN | FOREGROUND_INTENSITY;//装备文字颜色
+extern const DWORD CONSUMABLE_COLOR= FOREGROUND_BLUE | FOREGROUND_RED | FOREGROUND_INTENSITY;//消耗品颜色
+extern const DWORD GAME_INFO = SKILL_COLOR;//游戏信息颜色
